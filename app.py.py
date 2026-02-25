@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import random
 import requests
 
-API_KEY = "PASTE_YOUR_OPENWEATHER_API_KEY"
+API_KEY = "YOUR_API_KEY_HERE"
 
 # =========================
 # Pakistan Cities
@@ -224,5 +224,6 @@ with gr.Blocks(theme=gr.themes.Soft()) as demo:
         inputs=[mode, city, area_type, locality, outdoor_hours, vulnerable],
         outputs=[output, plot]
     )
+
 
 demo.launch(share=True)
